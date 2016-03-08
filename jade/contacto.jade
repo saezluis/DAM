@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/styles.css")
+		link(rel="stylesheet", href="css/animate.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+		script(src="js/scripts.js")
+		script(src="js/wow.js")
+		title
+	body
+		.billete-top-left
+			img(src="img/billete-top-left.png", alt="")
+		.billete-bottom-left
+			img(src="img/billete-bottom-left.png", alt="")
+		.billete-top-right
+			img(src="img/billete-top-right.png", alt="")
+		.billete-bottom-right
+			img(src="img/billete-bottom-right.png", alt="")
+		header.menu_top
+			.ed-container
+				.ed-item.base-50.web-20
+					.menu__top__logo-luchetti
+						img(src="img/logo-luchetti.png", alt="Tresmontes Luchetti")
+				.ed-item.base-50.web-80.no-padding
+					nav.main-end.main-center
+						.icon-menu.toggle-menu
+						ul.ed-menu.nav-bar.web-horizontal
+							li: a(href="index.html") inicio
+							li: a(href="bases.html") bases
+							li: a(href="premios.html") premios
+							li: a(href="ganadores.html") ganadores
+							li: a(href="contacto.html") contacto
+		section.ciclon
+			.ed-container
+				article.interior.ed-item.base-100.tablet-100.web-50.hd-50.full-50
+					img(src="img/just_logo.png", alt="El Spaguetton Millonario")
+					p.sepeque ¿Tienes alguna duda o consulta? Escríbenos
+
+				article.ed-item.base-100.tablet-100.web-50.hd-50.full-50
+					.ed-item.base-100.web-100
+						form#contacto
+							label.contact Nombre
+							input(type="text")
+
+							label.contact Teléfono
+							input(type="text")
+
+							label.contact Asunto
+							input(type="text")
+
+							label.contact Cuéntanos
+							textarea
+
+							input(type="submit", value="Enviar")
+
+
+

@@ -1,0 +1,22 @@
+.ciclonX{
+	#wrap {
+	  /* fixed width, centered in viewport */
+	  width: 100%;
+	  // left: -490px;
+	  // margin-left: 50%;
+	  // position: relative;
+	  text-align: left;
+	  margin: 0 auto;
+	}
+	#showcase {
+	  width: 100%;
+	  min-height: 460px;
+	  /*background: #16235e; /* Old browsers */
+	  margin-top: 12px;
+	  visibility: hidden;
+	}
+	#showcase img {
+	  cursor: pointer;
+	  width: 43%;
+	}
+}

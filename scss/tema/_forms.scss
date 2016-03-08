@@ -1,0 +1,135 @@
+form#dale{
+	background: rgba($blanco, .35);
+	padding: 1em;
+	overflow: hidden;
+	border-radius:5px;
+	margin-bottom: 1em;
+	//position: relative;
+	//z-index: 99;
+
+	@include desde-hasta (tablet,web){
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	label{
+		width: 100%;
+		display: block;
+		padding: 0.5em 0;
+		color:$blanco;
+		text-align: left;
+	}
+	
+	input[type="text"]{
+		width: 100%;
+		padding:5px;
+	}
+	//datos mail telefono
+	.half{
+		width: 46% !important;
+		float: left;
+	}
+	.righ-margin{
+		margin-right: 13px;
+	}
+	.left-margin{
+		margin-left: 13px;
+	}
+	select{
+		width: 100%;
+		padding:3px;
+	}
+
+	input[type="submit"]{
+		width: 100%;
+		border: none;
+		text-align: center;
+		padding: 5px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		background: rgb(241,231,103); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgb(241,231,103) 0%, rgb(254,182,69) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+		display: block;
+		margin-top: 1em;
+		color: $blanco;
+		font-size: 1.4em;
+		text-transform: uppercase;
+		text-shadow: -1px 0 $color-fondo, 0 1px $color-fondo, 1px 0 $color-fondo, 0 -1px $color-fondo;
+	}
+
+	// fieldset.first{
+	// 	width: 100%;
+	// 	@include desde (web){
+	// 		input[type="text"]{
+	// 			width: 50%;
+	// 			float: left;
+	// 		}
+	// 		label{
+	// 			width: 100%;
+	// 			@include desde (web){
+	// 				width: 50%;
+	// 				float: left;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+}
+
+//CONTACTO
+
+form#contacto{
+	width: 100%;
+	height: auto;
+	background: rgba($blanco,.5);
+	padding: 1em;
+	margin-top: 1.5em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	@include desde (tablet){
+		text-align: left;
+		position: relative;
+		z-index: 900;
+	}
+
+	@include desde (web){
+		margin-top: 80px;
+	}
+
+
+	label.contact{
+		width: 100%;
+		height: auto;
+		padding: 0.5em 0;
+		display: block;
+		color: $blanco;
+	}
+
+	input[type="text"], input[type="submit"], textarea{
+		width: 100%;
+		padding: 8px;
+	}
+	textarea{
+		height: 80px;
+	}
+	input[type="submit"]{
+		background: rgb(241,231,103); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgb(241,231,103) 0%, rgb(254,182,69) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+		color: $blanco;
+		border:none;
+		font-size: 0.9em;
+		margin-top: 0.9em;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+}
+

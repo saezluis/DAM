@@ -1,0 +1,79 @@
+.menu_top{
+	width: 100%;
+	position: fixed;
+	z-index: 80000;
+	padding: 0.1em 0;//0.8
+	top: 0;
+	background: rgb(241,231,103); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(241,231,103) 0%, rgb(254,182,69) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+	@include hasta (tablet){
+		z-index: 80000;
+	}
+	.menu__top__logo-luchetti{
+		width: 65%;
+		margin-top: 5px;
+		@include desde (tablet){
+			width: 40%;
+		}
+		@include desde (web){
+			width: 60%;
+		}
+	}
+	
+	.toggle-menu{
+		color: $blanco;
+		cursor: pointer;
+		font-size: 1.8em;
+		position: relative;
+		right: 15px;
+		@include desde (web){
+			display: none;
+		}
+	}
+
+	.ed-menu{
+		@include hasta (web){
+			background: rgba(#feb645, .8);
+			width: 80%;
+			transition: all .3s;
+			position: fixed;
+			right: -80%;
+			height: 100vh;
+			top: 49px;
+			&.mostrar{
+				right: 0;
+			}
+		}
+		@include desde (web){
+			width: 70%;
+			li{
+				border-right: 0;
+			}
+		}
+
+		a{
+			padding-left: 10px;
+			@include hasta (web){
+				text-transform: uppercase;
+				border-bottom: 1px solid $blanco;
+				text-shadow: -1px 0 $rojo, 0 1px $rojo, 1px 0 $rojo, 0 -1px $rojo;
+				transition: all 0.3s;
+			}
+			@include desde (web){
+				margin-right: 0;
+				text-transform: uppercase;
+				font-size: 0.9em;
+				padding: 0;
+				text-shadow: -1px 0 $rojo, 0 1px $rojo, 1px 0 $rojo, 0 -1px $rojo;
+				&:hover{
+					color: $rojo;
+					text-shadow: none;
+				}
+			}
+		}
+	}
+
+}

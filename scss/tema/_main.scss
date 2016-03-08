@@ -1,0 +1,401 @@
+.billete-top-left,
+.billete-bottom-left,
+.billete-top-right,
+.billete-bottom-right{
+	position:absolute;
+
+	@include hasta (tablet){
+		display: none;
+	}
+}
+
+.billete-top-left{
+	left:-10px;
+	top:-30px;
+}
+.billete-bottom-left{
+	left:-25px;
+	bottom:0;
+}
+
+.billete-top-right{
+	right: 0;
+	z-index: -1;
+	top: 0;
+}
+.billete-bottom-right{
+	right: 0;
+	bottom: -60px;
+
+}
+
+
+
+
+section{
+	width: 100%;
+	margin-top:10px;//50
+	margin-bottom: 30px;
+	@include desde (web){
+		margin-bottom: 0;
+	}
+	@include desde (prefull){
+		margin-top: 1%;
+	}
+	article{
+		width: 100%;
+
+		@include desde (tablet){
+			text-align: center;
+		}
+
+		@include desde (web){
+			img{
+				max-width: 150%;
+			}
+			.prem-log{
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+
+		@include desde (hd){
+			width: 100%;
+		}
+
+		h1{
+			color: $blanco;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 1em;
+			font-style: italic;
+			margin:0;
+			font-weight: bold;
+
+			@include desde (tablet){
+				width: 62%;
+				text-align: center;
+				font-size: 1.5em;
+				margin: 0 auto;
+			}
+
+			@include desde (web){
+				width: 100%;
+				margin-top:7em;
+				margin: none;
+				text-align: center;
+				padding: 0 10px;
+				font-size: 1.6em; 
+			}
+
+		}
+
+
+		h2{
+			color:$blanco;
+			margin: 0;
+			text-transform: uppercase;
+			font-style: italic;
+			text-align: center;
+			@include desde (tablet){
+				font-size: 1.4em;
+			}
+			@include desde (web){
+				margin-top: 50px;
+				font-size: 1.5em;
+				text-transform: uppercase;
+				text-align: left;
+			}
+		}
+		span{
+			color:$blanco;
+			font-size: 0.8em;
+			text-align: center;
+			margin-bottom: 1em;
+			display: block;
+			@include desde (web){
+				text-align: center;
+				margin: 0.8em 0;
+				display: block;
+			}
+		}
+
+
+
+
+		a.go{
+			text-align: center;
+			padding: 5px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			background: rgb(241,231,103); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgb(241,231,103) 0%, rgb(254,182,69) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+			display: block;
+			margin:0 auto;
+			width: 60%;
+			margin-top: 1.5em;
+			color: $blanco;
+			font-size: 1.4em;
+			text-transform: uppercase;
+			text-shadow: -1px 0 $color-fondo, 0 1px $color-fondo, 1px 0 $color-fondo, 0 -1px $color-fondo;
+
+			@include desde (tablet){
+				padding:15px;
+				width: 42%;
+			}
+
+			@include desde (web){
+				width: 50%;
+				margin: 1.5em auto 0 auto;
+			}
+
+		}
+	}
+
+	article.interior{
+		img{
+			width: 100%;
+			margin-top: -30px;
+			@include desde (tablet){
+				width: 55%;
+			}
+			@include desde (web){
+					width: 88%;
+			}
+		}
+		.caja-claim-web{
+			font-style: italic;
+			@include hasta (web){
+				display: block;
+			}
+			@include desde (web){
+				margin:0;
+				color: $blanco;
+				text-transform: uppercase;
+				text-align: left;
+				position: relative;
+    			top: -40px;
+				height: 308px;
+				overflow:hidden;
+    			width: 100%;//60
+    			background: url(../img/premios-mini.png) no-repeat right;
+			}
+			h3{
+				color: $blanco;
+				font-size: 1em;
+				text-align: left;
+				margin: 0;
+				padding-right: 250px;
+			}
+		}
+	}
+
+}//fin section
+
+.tarjetas{
+	width: 100%;
+	@include desde (web){
+		position: relative;
+		top: -30px;
+	}
+	p.gift{
+	    text-align: left;
+	    color: #fff;
+	    margin-left: 80px;
+	}
+	.cardgift{
+		@include desde (web){
+			width: 68%;
+		}
+	}
+}
+
+section.premios{
+	//border: 1px solid #000;
+	height: 105px;
+	margin-bottom: 100px;
+	display: none;
+		@include desde (tablet){
+			display: block;
+		}
+		@include desde (web){
+			margin-bottom: 0;
+		}
+		@include desde (prefull){
+			margin-top: 0 !important;
+		}
+	p.pre_premios{
+		color: #fff;
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 1em;
+		width: 80%;
+		margin-left: 70px;
+		//display: none;
+		@include desde (midium){
+			position: relative;
+			top: -50px;
+		}
+	}
+	.item__premios{
+		float: left;
+		margin-right: 20px;
+		position: relative;
+		bottom:0px;
+		display: block;
+		width: 15%;
+		@include desde (hd){
+			bottom: 60px;
+		}
+		@include desde (midium){
+			//display: none;
+			bottom: 60px;
+		}
+	}
+	// .item__premiosNo{
+	// 	margin-right: 0;
+	// 	position: relative;
+	// 	bottom:60px;
+	// }
+}
+
+
+//CICLON MILLONARIO
+
+.ciclon{
+	p.sepeque{
+		color:#fff;
+		font-size: 1.4em;
+		margin:0;
+		text-align: center;
+	}
+
+	button.moveCiclon{
+			text-align: center;
+			padding: 0px;
+			border:none;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			background: rgb(241,231,103); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgb(241,231,103) 0%, rgb(254,182,69) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+			display: block;
+			margin:0 auto;
+			width: 60%;
+			margin-top: 1em;
+			color: $blanco;
+			font-size: 1.4em;
+			text-transform: uppercase;
+			text-shadow: -1px 0 $color-fondo, 0 1px $color-fondo, 1px 0 $color-fondo, 0 -1px $color-fondo;
+	}
+
+	.ciclon{
+		position: relative;
+		margin-top: 80px;
+		text-align: center;
+		width: 100%;
+		margin:30px auto 0 auto;
+		@include desde (tablet){
+			width: 60%;
+		}
+		@include desde (web){
+			width: 100%;
+			margin-top: 125px;
+		}
+		.bille-left,
+		.bille-right,
+		.billeFlotados,
+		.billeFlotados2{
+			position: absolute;
+			top: 0;
+			z-index: -1;
+		}
+		.bille-left{
+			left: 0px;
+			@include desde (web){
+				left: 48px;
+			}
+		}
+		.bille-right{
+			right: 60px;
+    		top: 60px;
+		}
+		.billeFlotados{
+			left: -170px;
+		}
+		.billeFlotados2{
+		    left: 0px;
+		    top: 290px;
+		    transform: rotateY(183deg);
+		    width: 15%;
+			display: none;
+			@include desde (web){
+				display: block;
+			}
+		}
+
+	}//fin ciclon
+
+}
+
+section.premioss{
+	article{
+		@include desde (web){
+			img{
+				width: 100%;
+			}
+			h2.premiar{
+				margin-top: 150px;
+			}
+		}
+	}
+}
+
+
+section.ciclon{
+	/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	#ganadores{
+	width: 100%;
+	height: 500px;
+	margin-top: 80px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+		table { 
+		  width: 100%; 
+		  border-collapse: collapse; 
+		  background: rgba($blanco, .5);
+		  padding: 1em;
+		  text-align: center;
+		}
+		/* Zebra striping */
+		tr:nth-of-type(odd) { 
+		  background: rgba(#eee,.8); 
+		}
+		th { 
+		  //background: #333; 
+		  color: white; 
+		  font-weight: bold;
+			background: rgb(241,231,103); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgb(241,231,103) 0%, rgb(254,182,69) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */ 
+		}
+		td, th { 
+		  padding: 6px; 
+		  //border: 1px solid #ccc; 
+		  text-align: center; 
+		}
+
+	}
+}
