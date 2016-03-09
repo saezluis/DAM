@@ -40,7 +40,7 @@
 }
 
 #boxes h1{
-	color:##fff;
+	color:#fff;
 	text-align:left;
 	font-size:1em;
 	padding: 0 18px;
@@ -48,10 +48,93 @@
 }
 
 #boxes .imgCupon h1{
-	color:#fff;
+	color:#feb645;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#boxes .imgCupon h1 span.unpoquito{
+  font-size: 1.8em;
+}
+
+#boxes .imgCupon h4{
+  font-size: 1.2em;
+  color:#feb645;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 
+
+
+#boxes .imgCupon .exitt{
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      background: rgb(241,231,103); /* Old browsers */
+      background: -moz-linear-gradient(top,  rgb(241,231,103) 0%, rgb(254,182,69) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgb(241,231,103) 0%,rgb(254,182,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 8px 16px;
+}
+
+
+#boxes .imgCupon  .bill1,
+                  .bill2,
+                  .bill3,
+                  .bill4,
+                  .bill4,
+                  .bill5,
+                  .bill6,
+                  .bill7,
+                  .bill8
+                  {
+                    position: absolute;
+                  }
+
+
+#boxes .imgCupon .bill1{
+    top: -130px;
+    right: -330px;
+}
+
+#boxes .imgCupon .bill2{
+    top: -150px;
+    left: -100px;
+}
+
+#boxes .imgCupon .bill3{
+    bottom: -220px;
+    left: 140px;
+}
+
+#boxes .imgCupon .bill4{
+    top: 170px;
+    right: 80px;
+}
+
+#boxes .imgCupon .bill5{
+    top: 110px;
+    left: -40px;
+}
+
+#boxes .imgCupon .bill6{
+    left: 150px;
+    top: -240px;
+}
+
+#boxes .imgCupon .bill7{
+    left: -130px;
+}
+
+#boxes .imgCupon .bill8{
+    top: -70px;
+    left: 140px;
+}
 
 .maintext{
 	text-align: center;

@@ -67,12 +67,20 @@
 		<div style="display: none; position:relative;" id="dialog" class="window centrado-porcentual"> 
 			<div class="grupo">
 				<div class="imgCupon">
-					<h1>Felicitaciones!, ahora ya estás participando.</h1> 
-					<h1>El sorteo ser realizará el dd/mm/aa</h1>
-					<a href="index.php">Aceptar</a>
+          <div class="bill1"><img src="img/bille-1.png" alt=""></div>
+          <div class="bill2"><img src="img/bille-2.png" alt=""></div>
+          <div class="bill3"><img src="img/bille-3.png" alt=""></div>
+          <div class="bill4"><img src="img/bille-4.png" alt=""></div>
+          <div class="bill5"><img src="img/bille-5.png" alt=""></div>
+          <div class="bill6"><img src="img/bille-6.png" alt=""></div>
+          <div class="bill7"><img src="img/bille-7.png" alt=""></div>
+          <div class="bill8"><img src="img/bille-8.png" alt=""></div>
+					<h1><span class="unpoquito">!Felicitaciones!</span> <br>ya estás participando.</h1> 
+					<h4>El sorteo se realizará el<br><span>dd/mm/aa</span></h4>
+					<a class="exitt" href="index.php">Aceptar</a>
 				</div>
 			</div>
-				<h1><a href="#" class="close close-imagenes">X</a></h1>
+				<!-- <h1><a href="#" class="close close-imagenes">Xfwefwefwefwds</a></h1> -->
 		</div>
 		<div style="width: 1478px; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
 	</div>
