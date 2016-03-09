@@ -4,7 +4,7 @@
             <li><a href="index.php">inicio</a></li>
             <li><a href="#">bases</a></li>
             <li><a href="premios.php">premios</a></li>
-            <li><a href="ganadores.php">ganadores</a></li>
+            <li><a href="#">ganadores</a></li>
             <li><a href="contacto.php">contacto</a></li>
         </ul>
 </nav>
