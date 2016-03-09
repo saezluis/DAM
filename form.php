@@ -46,7 +46,7 @@
         </article>
         <article class="ed-item base-100 tablet-100 web-50 hd-50 full-50">
           <div class="ed-item base-100 web-100">
-            <h2>Para comenzar ingresa tus datos</h2><span>(El ingreso de facturas tiene un desfase de 24 hrs.)</span>
+            <h2>Para comenzar ingresa tus datos</h2><!-- <span>(El ingreso de facturas tiene un desfase de 24 hrs.)</span> -->
           </div>
           <form id="dale" class="ed-container" method="post" action="validar-nro-factura.php">
             <div class="ed-item base-100 web-50 midium-100">
@@ -75,11 +75,11 @@
               </select>
             </div>
             <div class="ed-item base-100 web-100">
-              <label>Ingresa tu número de factura		</label>
+              <label>Ingresa tu número de factura</label>
               <input type="text" name="nro_factura" />
             </div>
             <div class="ed-item base-100 web-100">
-              <label>Ingresa el número de gift card	</label>
+              <label>Ingresa el número de gift card</label>
               <input type="text" name="nro_gift_card" />
             </div>
             <div class="ed-item base-100 web-100">

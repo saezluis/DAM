@@ -39,13 +39,13 @@
           <div class="ed-item base-100 web-100">
             <form id="contacto" method="post" action="procesar-contacto.php">
               <label class="contact">Nombre</label>
-              <input type="text" name="nombre" />
+              <input type="text" name="nombre" required />
               <label class="contact">Teléfono</label>
-              <input type="text" name="telefono" />
+              <input type="text" name="telefono" required />
               <label class="contact">Asunto</label>
-              <input type="text" name="asunto" />
+              <input type="text" name="asunto" required />
               <label class="contact">Cuéntanos</label>
-              <textarea name="comentario"></textarea>
+              <textarea name="comentario" required ></textarea>
               <input type="submit" value="Enviar"/>
             </form>
           </div>
