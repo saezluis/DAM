@@ -21,12 +21,12 @@
           <div class="menu__top__logo-luchetti"><img src="img/logo-luchetti.png" alt="Tresmontes Luchetti"/></div>
         </div>
         <div class="ed-item base-50 web-80 no-padding">
-          <nav class="main-end main-center">
+         
             <div class="icon-menu toggle-menu"></div>
             <?php
 				include "menu.php";
 			?>
-          </nav>
+         
         </div>
       </div>
     </header>

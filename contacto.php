@@ -21,12 +21,12 @@
           <div class="menu__top__logo-luchetti"><img src="img/logo-luchetti.png" alt="Tresmontes Luchetti"/></div>
         </div>
         <div class="ed-item base-50 web-80 no-padding">
-          <nav class="main-end main-center">
+          
             <div class="icon-menu toggle-menu"></div>
             <?php
 				include "menu.php";
 			?>
-          </nav>
+          
         </div>
       </div>
     </header>
@@ -37,15 +37,15 @@
         </article>
         <article class="ed-item base-100 tablet-100 web-50 hd-50 full-50">
           <div class="ed-item base-100 web-100">
-            <form id="contacto">
+            <form id="contacto" method="post" action="procesar-contacto.php">
               <label class="contact">Nombre</label>
-              <input type="text"/>
+              <input type="text" name="nombre" />
               <label class="contact">Teléfono</label>
-              <input type="text"/>
+              <input type="text" name="telefono" />
               <label class="contact">Asunto</label>
-              <input type="text"/>
+              <input type="text" name="asunto" />
               <label class="contact">Cuéntanos</label>
-              <textarea></textarea>
+              <textarea name="comentario"></textarea>
               <input type="submit" value="Enviar"/>
             </form>
           </div>
